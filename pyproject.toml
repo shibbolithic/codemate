@@ -1,0 +1,24 @@
+[project]
+name = "pr-review-agent"
+version = "0.1.0"
+description = "Skeleton for PR Review Agent (hackathon)"
+authors = [
+  { name="Your Name", email="you@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "requests",
+  "unidiff",
+  "gitpython",
+  "radon",
+  "bandit",
+  "flake8",
+  "python-dotenv",
+  "pydantic",
+]
+
+[tool.poetry.scripts]
+pr-review-agent = "pr_review_agent.main:main"

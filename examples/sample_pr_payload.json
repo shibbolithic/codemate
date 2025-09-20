@@ -1,0 +1,12 @@
+{
+  "action": "opened",
+  "pull_request": {
+    "number": 1,
+    "title": "Example PR",
+    "body": "This is a sample PR payload for demo.",
+    "files": []
+  },
+  "repository": {
+    "full_name": "owner/repo"
+  }
+}
