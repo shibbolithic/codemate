@@ -96,3 +96,4 @@ The project can be run as:
 - Tests are in the `tests/` directory
 - Configuration is managed through `pyproject.toml`
 
+
