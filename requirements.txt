@@ -11,3 +11,4 @@ pydantic
 pytest
 pydantic-settings
 ngrok
+setuptools
