@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src/ ./src/
 
 # Install codemate package from src
-RUN pip install -e ./src
+ENV PYTHONPATH=/app/src
 
 # Expose port for uvicorn
 EXPOSE 8000
