@@ -10,10 +10,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code
 COPY src/ ./src/
 
-RUN pip install -e ./src
+# RUN pip install -e ./src
 
 # Expose FastAPI port
 EXPOSE 8000
 
 # Start server
-CMD ["uvicorn", "codemate.webhook.server:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "src.codemate.webhook.server:app", "--host", "0.0.0.0", "--port", "8000"]
